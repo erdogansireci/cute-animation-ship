@@ -1,0 +1,408 @@
+.main_1, .main_3 {
+	width: 1200px;
+	margin: 0 auto;
+	background: pink;
+}
+
+.main_1 {
+	background: #b6e8ff;
+	height: 700px;
+	position: relative;
+	margin-bottom: 100px;
+	overflow: hidden;
+	animation: sky_color 12s infinite linear;
+}
+
+.water {
+	width: 100%;
+	height: 30%;
+	background: linear-gradient(#64abe4, #1b545c);
+	bottom: 0;
+	position: absolute;
+}
+
+.water>div:before, .water>div:after {
+	content: "";
+	position: absolute;	
+	height: 50px;
+	border-radius: 100px 100px 0 0;
+}
+
+.water>div:first-child:before {	
+	width: 50px;
+	border-top: 10px solid #84afd1;
+	top: 0;
+	animation: wave 3500ms infinite linear, 
+	wave_vert 1000ms infinite linear, 
+	wave_trans 1200ms infinite linear, 
+	wave_color 500ms infinite linear;
+
+}
+
+.water>div:first-child:after {	
+	width: 40px;
+	border-top: 10px solid #6c90ac;
+	top: 30px;
+	animation: wave 3200ms infinite linear, 
+	wave_vert 900ms infinite linear,  
+	wave_trans 1300ms infinite linear, 
+	wave_color 450ms infinite linear;
+}
+
+.water>div:nth-child(2):before {	
+	width: 35px;
+	border-top: 10px solid #929ea8;
+	top: 60px;
+	animation: wave 3000ms infinite linear, 
+	wave_vert 800ms infinite linear,  
+	wave_trans 900ms infinite linear, 
+	wave_color 400ms infinite linear;
+}
+
+.water>div:nth-child(2):after {	
+	width: 45px;
+	border-top: 10px solid #8eafcb;
+	top: 85px;
+	animation: wave 2900ms infinite linear, 
+	wave_vert 700ms infinite linear,  
+	wave_trans 1400ms infinite linear, 
+	wave_color 320ms infinite linear;
+}
+
+.water>div:nth-child(3):before {	
+	width: 50px;
+	border-top: 10px solid #8daac1;
+	top: 110px;
+	animation: wave 2800ms infinite linear, 
+	wave_vert 600ms infinite linear,  
+	wave_trans 800ms infinite linear, 
+	wave_color 300ms infinite linear;
+}
+
+.water>div:nth-child(3):after {	
+	width: 55px;
+	border-top: 10px solid #7d9aa8;
+	top: 135px;
+	animation: wave 2500ms infinite linear, 
+	wave_vert 500ms infinite linear,  
+	wave_trans 1500ms infinite linear, 
+	wave_color 420ms infinite linear;
+}
+
+.water>div:nth-child(4):before {	
+	width: 40px;
+	border-top: 10px solid #6abde6;
+	top: 160px;
+	animation: wave 2300ms infinite linear, 
+	wave_vert 400ms infinite linear,  
+	wave_trans 700ms infinite linear, 
+	wave_color 460ms infinite linear;
+}
+
+.water>div:nth-child(4):after {	
+	width: 55px;
+	border-top: 10px solid #46abdd;
+	top: 185px;
+	animation: wave 2s infinite linear, 
+	wave_vert 300ms infinite linear,  
+	wave_trans 1600ms infinite linear, 
+	wave_color 370ms infinite linear;
+}
+
+.sun {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	background: radial-gradient(yellow, transparent);
+	bottom: 100px;
+	left: 0;
+	transform: translate(-50%, 50%);
+	transform-origin: 600px 200px 0;
+	animation: sun 12s infinite linear;
+}
+
+.sun:before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: sun_color 12s infinite;
+}
+
+.sun:after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: radial-gradient(circle at 100% 50%, transparent 60%, #fcf8cf 60%);
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left: 1100px;
+	transform: translate(-50%, -50%);
+	transform-origin: -50% -50% 0;
+	animation: moon 12s infinite linear;
+}
+
+.main_1:before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	top: 50px;
+	left: 50px;
+	box-shadow: 10px 10px #fcf8cf, 50px 40px #fcf8cf, 150px 60px #fcf8cf, 410px 210px #fcf8cf, 100px 200px #fcf8cf, 
+	800px 100px white, 600px 300px #fcf8cf, 500px 250px white, 400px 4000px white, 
+	300px 10px white, 450px 30px white, 900px 50px #fcf8cf, 1000px 320px white, 1000px 0 #fcf8cf, 200px 450px white, 
+	150px 350px white, 350px 300px #fcf8cf, 700px 130px white, 530px 300px white, 600px 350px white, 200px 180px white, 
+	900px 300px #fcf8cf, 800px 280px white, 630px 30px #fcf8cf, 980px 150px white;
+	animation: stars1 300ms infinite linear, stars 12s infinite linear;
+}
+
+
+
+.ship {
+	width: 250px;
+	height: 70px;
+	background: #673333;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%) rotateZ(3deg);
+	top: 75%;
+	animation: ship 2s infinite;
+}
+
+.ship:before {
+	content: "";
+	width: 80px;
+	height: 50px;
+	background: #673333;
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	transform-origin: 0% 100% 0;
+	transform: rotateZ(-45deg);
+}
+
+.ship:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-right: 50px solid #673333;
+	position: absolute;
+	right: 100%;
+	bottom: 0;
+}
+.window {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #7b874b;
+	top: 50%;
+	left: 10%;
+	transform: translate(-50%, -50%) rotateZ(-45deg);
+	transform-origin: 50% 50% 0;
+	animation: paddle 1s infinite;
+}
+
+.window:nth-child(2) {
+	left: 35%;
+}
+
+.window:nth-child(3) {
+	left: 60%;
+}
+
+.window:nth-child(4) {
+	left: 85%;
+}
+
+.window:after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 100px;
+	background: #391d1d;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 3px 3px 0 0;
+}
+
+.window:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	background: #673b3b;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 3px 3px 0 0;
+}
+
+
+.mast {
+	width: 10px;
+	height: 200px;
+	background: #673333;
+	left: 50%;
+	bottom: 100%;
+	position: absolute;
+
+}
+
+.mast:before {
+	content: "";
+	width: 50px;
+	height: 0;
+	border-top: 10px solid #d0dd4e;
+	border-bottom: 10px solid #d0dd4e;
+	border-right: 15px solid transparent;
+	position: absolute;
+	top:0;
+	left:100%;
+	transform-origin: 0 0 0;
+	animation: flag 2s infinite;
+}
+
+.mast:after {
+	content: "";
+	position: absolute;
+	width: 125px;
+	height: 125px;
+	background: radial-gradient(circle at 0 0, transparent 124px, #d73069 124px);
+	bottom: 0;
+	left: 100%;
+	transform: rotateZ(-45deg);
+	transform-origin: 0 100% 0;
+}
+
+.sail {
+	width: 100px;
+	height: 100%;
+	background: transparent;
+	position: absolute;
+	top:0;
+	right: 100%;
+	box-sizing: border-box;
+	border-left: 50px solid #d73069;
+	border-bottom: 10px solid #d73069;
+	border-radius: 300px 0 0 300px;
+	transform: scaleX(1.75);
+	transform-origin: 100% 50% 0;
+	animation: sail 1s infinite;
+	-webkit-animation: sail 2s infinite;
+}
+
+@keyframes paddle {
+	0% {transform: translate(-50%, -50%) rotateZ(0deg)};
+	50% {transform: translate(-50%, -50%) rotateZ(-45deg)}
+	70% {transform: translate(-50%, -50%) rotateZ(-30deg)}
+	100% {transform: translate(-50%, -50%) rotateZ(0deg)}	
+}
+
+@keyframes sail {
+	0% {transform: scaleX(1);}
+	50% {transform: scaleX(2);}
+	100% {transform: scaleX(1);}	
+}
+
+@keyframes flag {
+	0% {transform: scaleX(1)}
+	50% {transform: scaleX(2)}
+	100% {transform: scaleX(1)}	
+}
+
+@keyframes ship {
+	0% {transform: translateX(-50%) rotateZ(-2deg)}
+	50% {transform: translateX(-50%) rotateZ(2deg)}
+	100% {transform: translateX(-50%) rotateZ(-2deg)}	
+}
+
+@keyframes sun {
+	0% {transform: rotateZ(-40deg)}
+	100% {transform: rotateZ(320deg)}	
+}
+
+@keyframes moon {
+	0% {transform: rotateZ(40deg)}
+	100% {transform: rotateZ(-320deg)}	
+}
+
+
+@keyframes sun_color {
+	0% {background: orange;}
+	15% {background: orange;}
+	45% {background: yellow;}
+	60% {background: orange;}	
+	100% {background: orange;}	
+}
+
+@keyframes sky_color {
+	0% {background: #143b4d;}
+	30% {background: #b6e8ff;}
+	35% {background: #b6e8ff;}
+	40% {background: #b6e8ff;}
+	70% {background: #143b4d;}
+	100% {background: #143b4d;}		
+}
+
+@keyframes stars1 {
+	0% {}
+
+	30% {box-shadow: 10px 10px transparent, 50px 40px #fcf8cf, 150px 60px transparent, 410px 210px #fcf8cf, 100px 200px transparent, 
+	800px 100px white, 600px 300px transparent, 500px 250px white, 400px 4000px transparent, 
+	300px 10px white, 450px 30px transparent, 900px 50px #fcf8cf, 1000px 320px transparent, 1000px 0 #fcf8cf, 200px 450px transparent, 
+	150px 350px white, 350px 300px transparent, 700px 130px white, 530px 300px transparent, 600px 350px white, 200px 180px transparent, 
+	900px 300px #fcf8cf, 800px 280px transparent, 630px 30px #fcf8cf, 980px 150px transparent}
+
+	70% {box-shadow: 10px 10px #fcf8cf, 50px 40px transparent, 150px 60px #fcf8cf, 410px 210px transparent, 100px 200px #fcf8cf, 
+	800px 100px transparent, 600px 300px #fcf8cf, 500px 250px transparent, 400px 4000px white, 
+	300px 10px transparent, 450px 30px white, 900px 50px transparent, 1000px 320px white, 1000px 0 transparent, 200px 450px white, 
+	150px 350px transparent, 350px 300px #fcf8cf, 700px 130px transparent, 530px 300px white, 600px 350px transparent, 200px 180px white, 
+	900px 300px transparent, 800px 280px white, 630px 30px transparent, 980px 150px white}
+
+	100% {}		
+}
+
+@keyframes stars {
+	0% {opacity: 1}
+	10% {opacity: 0;}
+	50% {opacity: 0}
+	90% {opacity: 1}
+	100% {opacity: 1}		
+}
+
+@keyframes wave {
+	0% {left: 0;}
+	100% {left: 100%;}		
+}
+
+@keyframes wave_vert {
+	0% {transform: translateY(0);}
+	25% {transform: translateY(-3px);}
+	75% {transform: translateY(3px);}
+	100% {transform: translateY(0);}		
+}
+
+@keyframes wave_trans {
+	0% {opacity: 1}
+	50% {opacity: 0}
+	100% {opacity: 1}		
+}
+
+@keyframes wave_color {
+	0% {}
+	50% {border-top: 15px solid #16d2ea;}
+	100% {}		
+}
