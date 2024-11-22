@@ -14,9 +14,12 @@
 }
 
 p {
-    position: absolute;
-    top: 80%; /* Görsellerin altında 20px olacak şekilde */
-    text-align: center; /* Ortala */
+    margin: 0;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .water {
