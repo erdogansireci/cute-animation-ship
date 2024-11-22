@@ -8,7 +8,7 @@
 	background: #b6e8ff;
 	height: 700px;
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 	overflow: hidden;
 	animation: sky_color 12s infinite linear;
 }
@@ -18,7 +18,7 @@ p {
     position: relative;
     top: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
