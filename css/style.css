@@ -1,3 +1,12 @@
+body {
+	background-color: #212121; /* İstediğiniz rengi buraya yazabilirsiniz */
+	color: #BBBBBB; /* Yazı rengi için (isteğe bağlı) */
+	justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    height: 100vh; /* Sayfanın tamamını kapsa */
+    text-align: center; /* Metni ortala */
+}
+
 .main_1, .main_3 {
 	width: 1200px;
 	margin: 0 auto;
@@ -18,8 +27,16 @@ p {
     	position: relative;
     	top: 20px;
     	text-align: center;
-    	font-size: 24px;
+    	font-size: 18px;
     	font-weight: bold;
+}
+
+.p1 {
+	font-size: 24px;
+}
+
+.p2 {
+	font-size: 20px;
 }
 
 .water {
